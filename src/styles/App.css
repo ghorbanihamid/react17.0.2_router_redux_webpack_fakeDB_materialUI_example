@@ -1,0 +1,102 @@
+.App {
+  display: 'flex';
+}
+.root: {
+  flexGrow: 1;
+  zIndex: 1;
+  overflow: 'hidden';
+  position: 'relative';
+  display: 'flex';
+  width: '100%';
+}
+
+.app-bar: {
+    zIndex: theme.zIndex.drawer + 1;
+  },
+
+.navIconHide: {
+  [theme.breakpoints.up('md')]: {
+    display: 'none';
+  }
+}
+.toolbar: {
+  toolbar: theme.mixins.toolbar
+}
+
+.drawerPaper: {
+  width: drawerWidth;
+  [theme.breakpoints.up('md')]: {
+    position: 'relative';
+  };
+}
+
+.content: {
+  flexGrow: 1;
+  backgroundColor: theme.palette.background.default;
+  padding: theme.spacing(3);
+}
+
+.nested: {
+  paddingLeft: theme.spacing(4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
